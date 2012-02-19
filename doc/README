@@ -1,0 +1,73 @@
+
+              Author: xiaomo(wxm4ever@gmail.com)
+              Date  : 2012/01/14 21:14 Sat
+
+=encoding utf8
+
+=pod
+
+=head1 NAME
+
+podviewer - pod 阅读器
+
+=head1 DESCRIPTION
+
+=head3 Layout
+
+    ----base
+      ---navi
+        --model ( local + internet )
+        --uri ( file uri + web url )
+        --go button
+        --refresh button
+
+        --source code view button
+        --pod view button
+
+      ---content
+      ---status
+
+=head3 设计理念
+
+最近翻译、书写各种 pod 的时候发现阅读 pod 的时候很不顺手，一般就是使用 
+Terminal 的 perldoc，或者通过 pod2* 工具来查看。
+
+TODO: L<Pod::Webserver> 模块没有研究过。研究之后更新。
+
+本打算用 air 来实现，不过由于 air env 在 linux 下已经不提供及时的更新与
+支持、况且假期在家有着各种的不方便，所以暂时决定用 JAVA 来实现。
+
+=head1 LOG
+
+=over 4
+
+=item Update 2012/01/15 13:37
+
+初步完成 local、internet 模式的选择，source code、pod view 模式的选择。
+下一步完成：
+
+=over 8
+
+=item * 完成状态栏的设计。
+
+=item * 为 navi_panel 中的 button 添加快捷键。
+
+=item * source code 模式下可以通过 c-e c-s 来进行编辑、保存。
+
+=back
+
+=item Update To Be Continue.
+
+To Be Continue...
+
+=back
+
+=head1 AUTHOR
+
+xiaomo(wxm4ever@gmail.com)
+
+=head1 ALSO
+
+欢迎任何人提供任何意见与建议，也欢迎任何人在代码的基础上进行修改。
+
+=cut
